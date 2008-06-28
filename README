@@ -1,0 +1,300 @@
+kdiff3
+------------------------------------------
+KDiff3 is a program that
+- compares and merges two or three input files or directories,
+- shows the differences line by line and character by character (!),
+- provides an automatic merge-facility and
+- an integrated editor for comfortable solving of merge-conflicts
+- has support for KDE-KIO (ftp, sftp, http, fish, smb)
+- and has an intuitive graphical user interface.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  diffutils
+  kdelibs4-3.5.9-1
+  libkonq-3.5.9-1  (optional)
+  qt3-3.3.8-4
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  perl-5.10.0-4
+  sed-4.1.5-2
+
+Canonical website:
+  http://kdiff3.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/kdiff3/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdiff3-0.9.92-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdiff3-0.9.92-X.cygport all
+
+This will create:
+  /usr/src/kdiff3-0.9.92-X-src.tar.bz2
+  /usr/src/kdiff3-0.9.92-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/kdiff3.sh
+  /usr/bin/kdiff3.exe
+  /usr/lib/kde3/cygkdiff3part.dll
+  /usr/lib/kde3/cygkdiff3plugin.dll
+  /usr/lib/kde3/libkdiff3part.la
+  /usr/lib/kde3/libkdiff3plugin.la
+  /usr/share/applications/kde/kdiff3.desktop
+  /usr/share/apps/kdiff3/kdiff3_shell.rc
+  /usr/share/apps/kdiff3part/kdiff3_part.rc
+  /usr/share/doc/HTML/da/kdiff3/common
+  /usr/share/doc/HTML/da/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/da/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/da/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/da/kdiff3/index.docbook
+  /usr/share/doc/HTML/da/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/da/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/da/kdiff3/merge_current.png
+  /usr/share/doc/HTML/da/kdiff3/new.png
+  /usr/share/doc/HTML/da/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/da/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/da/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/da/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/da/kdiff3/white_space.png
+  /usr/share/doc/HTML/de/kdiff3/common
+  /usr/share/doc/HTML/de/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/de/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/de/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/de/kdiff3/index.docbook
+  /usr/share/doc/HTML/de/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/de/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/de/kdiff3/merge_current.png
+  /usr/share/doc/HTML/de/kdiff3/new.png
+  /usr/share/doc/HTML/de/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/de/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/de/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/de/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/de/kdiff3/white_space.png
+  /usr/share/doc/HTML/en/kdiff3/common
+  /usr/share/doc/HTML/en/kdiff3/compilation.html
+  /usr/share/doc/HTML/en/kdiff3/credits.html
+  /usr/share/doc/HTML/en/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/en/kdiff3/dirmerge.html
+  /usr/share/doc/HTML/en/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/en/kdiff3/dirmergeoptions.html
+  /usr/share/doc/HTML/en/kdiff3/dirmergevisible.html
+  /usr/share/doc/HTML/en/kdiff3/documentation.html
+  /usr/share/doc/HTML/en/kdiff3/dothemerge.html
+  /usr/share/doc/HTML/en/kdiff3/faq.html
+  /usr/share/doc/HTML/en/kdiff3/features.html
+  /usr/share/doc/HTML/en/kdiff3/find.html
+  /usr/share/doc/HTML/en/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/en/kdiff3/index.docbook
+  /usr/share/doc/HTML/en/kdiff3/index.html
+  /usr/share/doc/HTML/en/kdiff3/installation.html
+  /usr/share/doc/HTML/en/kdiff3/interpretinginformation.html
+  /usr/share/doc/HTML/en/kdiff3/introduction.html
+  /usr/share/doc/HTML/en/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/en/kdiff3/kdiff3.1
+  /usr/share/doc/HTML/en/kdiff3/kpart.html
+  /usr/share/doc/HTML/en/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/en/kdiff3/merge_current.png
+  /usr/share/doc/HTML/en/kdiff3/merging.html
+  /usr/share/doc/HTML/en/kdiff3/misc.html
+  /usr/share/doc/HTML/en/kdiff3/navigation.html
+  /usr/share/doc/HTML/en/kdiff3/new.png
+  /usr/share/doc/HTML/en/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/en/kdiff3/opendialog.html
+  /usr/share/doc/HTML/en/kdiff3/options.html
+  /usr/share/doc/HTML/en/kdiff3/other.html
+  /usr/share/doc/HTML/en/kdiff3/pasteinput.html
+  /usr/share/doc/HTML/en/kdiff3/preprocessors.html
+  /usr/share/doc/HTML/en/kdiff3/printing.html
+  /usr/share/doc/HTML/en/kdiff3/requirements.html
+  /usr/share/doc/HTML/en/kdiff3/saving.html
+  /usr/share/doc/HTML/en/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/en/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/en/kdiff3/screenshots.html
+  /usr/share/doc/HTML/en/kdiff3/selections.html
+  /usr/share/doc/HTML/en/kdiff3/startingdirmerge.html
+  /usr/share/doc/HTML/en/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/en/kdiff3/white_space.png
+  /usr/share/doc/HTML/es/kdiff3/common
+  /usr/share/doc/HTML/es/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/es/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/es/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/es/kdiff3/index.docbook
+  /usr/share/doc/HTML/es/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/es/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/es/kdiff3/merge_current.png
+  /usr/share/doc/HTML/es/kdiff3/new.png
+  /usr/share/doc/HTML/es/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/es/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/es/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/es/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/es/kdiff3/white_space.png
+  /usr/share/doc/HTML/et/kdiff3/common
+  /usr/share/doc/HTML/et/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/et/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/et/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/et/kdiff3/index.docbook
+  /usr/share/doc/HTML/et/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/et/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/et/kdiff3/merge_current.png
+  /usr/share/doc/HTML/et/kdiff3/new.png
+  /usr/share/doc/HTML/et/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/et/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/et/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/et/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/et/kdiff3/white_space.png
+  /usr/share/doc/HTML/fr/kdiff3/common
+  /usr/share/doc/HTML/fr/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/fr/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/fr/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/fr/kdiff3/index.docbook
+  /usr/share/doc/HTML/fr/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/fr/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/fr/kdiff3/merge_current.png
+  /usr/share/doc/HTML/fr/kdiff3/new.png
+  /usr/share/doc/HTML/fr/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/fr/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/fr/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/fr/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/fr/kdiff3/white_space.png
+  /usr/share/doc/HTML/it/kdiff3/common
+  /usr/share/doc/HTML/it/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/it/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/it/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/it/kdiff3/index.docbook
+  /usr/share/doc/HTML/it/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/it/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/it/kdiff3/merge_current.png
+  /usr/share/doc/HTML/it/kdiff3/new.png
+  /usr/share/doc/HTML/it/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/it/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/it/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/it/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/it/kdiff3/white_space.png
+  /usr/share/doc/HTML/kdiff3/README
+  /usr/share/doc/HTML/kdiff3/createpdfdoc
+  /usr/share/doc/HTML/nl/kdiff3/common
+  /usr/share/doc/HTML/nl/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/nl/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/nl/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/nl/kdiff3/index.docbook
+  /usr/share/doc/HTML/nl/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/nl/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/nl/kdiff3/merge_current.png
+  /usr/share/doc/HTML/nl/kdiff3/new.png
+  /usr/share/doc/HTML/nl/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/nl/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/nl/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/nl/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/nl/kdiff3/white_space.png
+  /usr/share/doc/HTML/pt/kdiff3/common
+  /usr/share/doc/HTML/pt/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/pt/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/pt/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/pt/kdiff3/index.docbook
+  /usr/share/doc/HTML/pt/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/pt/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/pt/kdiff3/merge_current.png
+  /usr/share/doc/HTML/pt/kdiff3/new.png
+  /usr/share/doc/HTML/pt/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/pt/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/pt/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/pt/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/pt/kdiff3/white_space.png
+  /usr/share/doc/HTML/sv/kdiff3/common
+  /usr/share/doc/HTML/sv/kdiff3/dirbrowser.png
+  /usr/share/doc/HTML/sv/kdiff3/dirmergebig.png
+  /usr/share/doc/HTML/sv/kdiff3/index.cache.bz2
+  /usr/share/doc/HTML/sv/kdiff3/index.docbook
+  /usr/share/doc/HTML/sv/kdiff3/iteminfo.png
+  /usr/share/doc/HTML/sv/kdiff3/letter_by_letter.png
+  /usr/share/doc/HTML/sv/kdiff3/merge_current.png
+  /usr/share/doc/HTML/sv/kdiff3/new.png
+  /usr/share/doc/HTML/sv/kdiff3/open_dialog.png
+  /usr/share/doc/HTML/sv/kdiff3/screenshot_diff.png
+  /usr/share/doc/HTML/sv/kdiff3/screenshot_merge.png
+  /usr/share/doc/HTML/sv/kdiff3/triple_diff.png
+  /usr/share/doc/HTML/sv/kdiff3/white_space.png
+  /usr/share/doc/kdiff3-0.9.92/AUTHORS
+  /usr/share/doc/kdiff3-0.9.92/COPYING
+  /usr/share/doc/kdiff3-0.9.92/ChangeLog
+  /usr/share/doc/kdiff3-0.9.92/INSTALL
+  /usr/share/doc/kdiff3-0.9.92/NEWS
+  /usr/share/doc/kdiff3-0.9.92/README
+  /usr/share/doc/kdiff3-0.9.92/TODO
+  /usr/share/icons/hicolor/16x16/apps/kdiff3.png
+  /usr/share/icons/hicolor/32x32/apps/kdiff3.png
+  /usr/share/icons/locolor/16x16/apps/kdiff3.png
+  /usr/share/icons/locolor/32x32/apps/kdiff3.png
+  /usr/share/locale/ar/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/az/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/bg/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/br/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/ca/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/cs/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/cy/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/da/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/de/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/el/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/es/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/et/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/fr/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/ga/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/gl/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/hi/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/hu/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/is/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/it/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/ja/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/ka/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/lt/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/nb/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/nl/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/pl/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/pt/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/ro/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/ru/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/rw/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/sk/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/sr/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/sv/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/ta/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/tg/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/tr/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/uk/LC_MESSAGES/kdiff3.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/kdiff3.mo
+  /usr/share/man/man1/kdiff3.1.gz
+  /usr/share/services/kdiff3_plugin.desktop
+  /usr/share/services/kdiff3part.desktop
+
+------------------
+
+Port Notes:
+
+----- version 0.9.92-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
