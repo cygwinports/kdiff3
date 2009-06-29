@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 diffutils
+requires: kdelibs4 qt3 diffutils
 sdesc: "KDE file comparison utility"
 ldesc: "KDiff3 is a program that
 - compares and merges two or three input files or directories,
