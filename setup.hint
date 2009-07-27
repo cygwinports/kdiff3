@@ -1,5 +1,5 @@
-category: KDE
-requires: kdelibs4 qt3 diffutils
+category: KDE Devel
+requires: diffutils libgcc1 libkdecore5 libQtCore4 libQtGui4 patch
 sdesc: "KDE file comparison utility"
 ldesc: "KDiff3 is a program that
 - compares and merges two or three input files or directories,
