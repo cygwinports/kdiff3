@@ -1,5 +1,0 @@
-inherit kde4
-
-DESCRIPTION="KDE file comparison utility"
-HOMEPAGE="http://kdiff3.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"

@@ -1,0 +1,42 @@
+inherit kde4 qt4-qmake
+
+DESCRIPTION="KDE file comparison utility"
+HOMEPAGE="http://kdiff3.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+PATCH_URI="0.9.96-qm-install.patch"
+
+PKG_NAMES="${PN} ${PN}-qt"
+kdiff3_CONTENTS="--exclude=kdiff3-qt* --exclude=*.qm etc/ usr/"
+kdiff3_qt_CONTENTS="etc/ usr/bin/kdiff3-qt.exe
+		    usr/share/applications/kdiff3-qt.desktop
+		    usr/share/icons/*/*/*/kdiff3-qt.*
+		    usr/share/locale/*/*/kdiff3.qm"
+
+src_compile() {
+	cd ${B}
+	kde4_compile
+
+	# Qt-only version
+	mkdir -p qt-only
+	cd qt-only
+	cygqmake4 ${S}/src-QT4/kdiff3.pro
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# Qt-only version
+	newbin qt-only/kdiff3.exe kdiff3-qt.exe
+	make_desktop_entry kdiff3-qt "KDiff3 (Qt-only)" kdiff3-qt "Development;Qt"
+	for i in hicolor/16x16 hicolor/32x32 locolor/16x16 locolor/32x32
+	do
+		cp ${D}/usr/share/icons/$i/apps/kdiff3{,-qt}.png
+	done
+
+	# translations for Qt-only version
+	cd po
+	lndirs ${S}/po
+	DESTDIR=${D} sh create_qm_files install
+}
