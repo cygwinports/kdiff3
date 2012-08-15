@@ -1,12 +1,23 @@
 inherit kde4 qt4-qmake
 
-DESCRIPTION="KDE file comparison utility"
+CATEGORY="KDE"
+SUMMARY="KDE file comparison utility"
+DESCRIPTION="KDiff3 is a program that
+- compares and merges two or three input files or directories,
+- shows the differences line by line and character by character,
+- provides an automatic merge-facility and
+- an integrated editor for comfortable solving of merge-conflicts
+- has support for KDE-KIO (ftp, sftp, http, fish, smb)
+- and has an intuitive graphical user interface."
 HOMEPAGE="http://kdiff3.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
-PATCH_URI="0.9.96-qm-install.patch"
+PATCH_URI="0.9.97-qm-install.patch"
 
 PKG_NAMES="${PN} ${PN}-qt"
+kdiff3_REQUIRES="diffutils patch"
 kdiff3_CONTENTS="--exclude=kdiff3-qt* --exclude=*.qm etc/ usr/"
+kdiff3_qt_SUMMARY="Qt file comparison utility"
+kdiff3_qt_REQUIRES="diffutils patch"
 kdiff3_qt_CONTENTS="etc/ usr/bin/kdiff3-qt.exe
 		    usr/share/applications/kdiff3-qt.desktop
 		    usr/share/icons/*/*/*/kdiff3-qt.*

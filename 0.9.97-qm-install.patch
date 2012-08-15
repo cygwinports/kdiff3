@@ -1,0 +1,11 @@
+--- origsrc/kdiff3-0.9.97/po/create_qm_files	2012-08-07 15:37:24.000000000 -0500
++++ src/kdiff3-0.9.97/po/create_qm_files	2012-08-15 14:16:43.606431400 -0500
+@@ -40,7 +40,7 @@ elif [ "$1" = "install" ]; then
+    for i in `ls` ; do
+       if [ -s $i/kdiff3.po ]; then
+          echo Installing /usr/share/locale/$i/LC_MESSAGES/kdiff3.qm
+-         sudo lconvert -if po -of qm -o /usr/share/locale/$i/LC_MESSAGES/kdiff3.qm $i/kdiff3.po
++         lconvert -if po -of qm -o $DESTDIR/usr/share/locale/$i/LC_MESSAGES/kdiff3.qm $i/kdiff3.po
+       fi
+    done
+ else
