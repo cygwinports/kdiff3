@@ -1,5 +1,8 @@
 inherit kde4 qt4-qmake
 
+NAME="kdiff3"
+VERSION=0.9.97
+RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE file comparison utility"
 DESCRIPTION="KDiff3 is a program that
@@ -10,10 +13,10 @@ DESCRIPTION="KDiff3 is a program that
 - has support for KDE-KIO (ftp, sftp, http, fish, smb)
 - and has an intuitive graphical user interface."
 HOMEPAGE="http://kdiff3.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/kdiff3/kdiff3-${VERSION}.tar.gz"
 PATCH_URI="0.9.97-qm-install.patch"
 
-PKG_NAMES="${PN} ${PN}-qt"
+PKG_NAMES="kdiff3 kdiff3-qt"
 kdiff3_REQUIRES="diffutils patch"
 kdiff3_CONTENTS="--exclude=kdiff3-qt* --exclude=*.qm etc/ usr/"
 kdiff3_qt_SUMMARY="Qt file comparison utility"
