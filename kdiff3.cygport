@@ -1,7 +1,7 @@
 inherit kde4 qt4-qmake
 
 NAME="kdiff3"
-VERSION=0.9.97
+VERSION=0.9.98
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE file comparison utility"
